@@ -1,7 +1,15 @@
 EESchema Schematic File Version 2
+LIBS:MLAB_BATERY
+LIBS:MLAB_CONNECTORS
+LIBS:MLAB_D
+LIBS:MLAB_DISPLAY
+LIBS:MLAB_IO
+LIBS:MLAB_Jumpers
+LIBS:MLAB_SW
+LIBS:MLAB_T
+LIBS:MLAB_U
 LIBS:74xgxx
 LIBS:74xx
-LIBS:ac-dc
 LIBS:actel
 LIBS:adc-dac
 LIBS:Altera
@@ -11,7 +19,6 @@ LIBS:atmel
 LIBS:audio
 LIBS:brooktre
 LIBS:cmos4000
-LIBS:cmos_ieee
 LIBS:conn
 LIBS:contrib
 LIBS:cypress
@@ -21,11 +28,9 @@ LIBS:digital-audio
 LIBS:diode
 LIBS:display
 LIBS:dsp
-LIBS:elec-unifil
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:gennum
-LIBS:graphic
 LIBS:hc11
 LIBS:intel
 LIBS:interface
@@ -43,6 +48,8 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:microcontrollers
+LIBS:mlab_header
+LIBS:mlab_mechanical
 LIBS:motor_drivers
 LIBS:motorola
 LIBS:msp430
@@ -70,11 +77,9 @@ LIBS:switches
 LIBS:texas
 LIBS:transf
 LIBS:transistors
-LIBS:ttl_ieee
 LIBS:valves
 LIBS:video
 LIBS:Xicor
-LIBS:xilinx
 LIBS:Zilog
 LIBS:VLFANT01B-cache
 EELAYER 25 0
@@ -103,17 +108,6 @@ F 3 "" H 10280 720 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
-U 1 1 57D29BFA
-P 10480 820
-F 0 "#PWR01" H 10480 570 50  0001 C CNN
-F 1 "GND" H 10480 670 50  0000 C CNN
-F 2 "" H 10480 820 50  0000 C CNN
-F 3 "" H 10480 820 50  0000 C CNN
-	1    10480 820 
-	1    0    0    -1  
-$EndComp
-$Comp
 L HOLE M3
 U 1 1 57D2A075
 P 10680 720
@@ -122,17 +116,6 @@ F 1 "HOLE" H 10680 620 60  0000 C CNN
 F 2 "Mlab_Mechanical:MountingHole_3mm" H 10680 720 60  0001 C CNN
 F 3 "" H 10680 720 60  0000 C CNN
 	1    10680 720 
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR02
-U 1 1 57D2A07B
-P 10880 820
-F 0 "#PWR02" H 10880 570 50  0001 C CNN
-F 1 "GND" H 10880 670 50  0000 C CNN
-F 2 "" H 10880 820 50  0000 C CNN
-F 3 "" H 10880 820 50  0000 C CNN
-	1    10880 820 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -147,17 +130,6 @@ F 3 "" H 10280 1120 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
-U 1 1 57D2A38D
-P 10480 1220
-F 0 "#PWR03" H 10480 970 50  0001 C CNN
-F 1 "GND" H 10480 1070 50  0000 C CNN
-F 2 "" H 10480 1220 50  0000 C CNN
-F 3 "" H 10480 1220 50  0000 C CNN
-	1    10480 1220
-	1    0    0    -1  
-$EndComp
-$Comp
 L HOLE M4
 U 1 1 57D2A395
 P 10680 1120
@@ -168,33 +140,6 @@ F 3 "" H 10680 1120 60  0000 C CNN
 	1    10680 1120
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR04
-U 1 1 57D2A39B
-P 10880 1220
-F 0 "#PWR04" H 10880 970 50  0001 C CNN
-F 1 "GND" H 10880 1070 50  0000 C CNN
-F 2 "" H 10880 1220 50  0000 C CNN
-F 3 "" H 10880 1220 50  0000 C CNN
-	1    10880 1220
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10330 720  10480 720 
-Wire Wire Line
-	10480 720  10480 820 
-Wire Wire Line
-	10730 720  10880 720 
-Wire Wire Line
-	10880 720  10880 820 
-Wire Wire Line
-	10330 1120 10480 1120
-Wire Wire Line
-	10480 1120 10480 1220
-Wire Wire Line
-	10730 1120 10880 1120
-Wire Wire Line
-	10880 1120 10880 1220
 $Comp
 L SMA J7
 U 1 1 57D68C46
@@ -248,17 +193,6 @@ Wire Wire Line
 	6750 4600 6750 4550
 Wire Wire Line
 	6750 4550 6850 4550
-$Comp
-L RJ45_RJHSE-5384 J1
-U 1 1 58170EC6
-P 2500 2050
-F 0 "J1" H 2500 2674 60  0000 C CNN
-F 1 "RJ45_RJHSE-5384" H 2500 2575 51  0000 C CNN
-F 2 "Mlab_CON:RJHSE-5384(RJ45)" H 2500 2050 60  0001 C CNN
-F 3 "" H 2500 2050 60  0000 C CNN
-	1    2500 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L RJ45_RJHSE-5384 J2
 U 1 1 58171334
@@ -332,17 +266,6 @@ OUT2
 Wire Wire Line
 	4200 2500 4200 2800
 $Comp
-L GND #PWR012
-U 1 1 58173397
-P 3050 1750
-F 0 "#PWR012" H 3050 1500 50  0001 C CNN
-F 1 "GND" H 3050 1600 50  0000 C CNN
-F 2 "" H 3050 1750 50  0000 C CNN
-F 3 "" H 3050 1750 50  0000 C CNN
-	1    3050 1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR013
 U 1 1 581734D2
 P 4400 1750
@@ -355,8 +278,6 @@ F 3 "" H 4400 1750 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	4400 1750 4400 1700
-Wire Wire Line
-	3050 1750 3050 1700
 Text Label 6450 3300 1    60   ~ 0
 OUT1
 Text Label 6550 3300 1    60   ~ 0
@@ -378,4 +299,15 @@ F 3 "" H 7050 2250 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7050 2250 7050 2200
+$Comp
+L RJ45_RJHSE-5384 J1
+U 1 1 58170EC6
+P 2500 2050
+F 0 "J1" H 2500 2674 60  0000 C CNN
+F 1 "RJ45_RJHSE-5384" H 2500 2575 51  0000 C CNN
+F 2 "Mlab_CON:RJHSE-5384(RJ45)" H 2500 2050 60  0001 C CNN
+F 3 "" H 2500 2050 60  0000 C CNN
+	1    2500 2050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
