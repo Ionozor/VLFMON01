@@ -1,7 +1,17 @@
 ## VLF monitoring station
 
-## VLF monitorovací stanice
+Moritoring station optimized for (Sudden ionospheric disturbances) SID monitoring and detection by monitoring of VLF signals from submarine transmitters. 
 
-Moritoring station optimized for (Sudden ionospheric disturbances) SID monitoring and detection by monitorin of VLF signals from submarine transmitters.
+## Hardware
 
-Stanice určená pro měření a detekci náhlých ionosférických poruch pozorováním VLF signálů z ponorkových vysílačů.
+![VLFMON receiver block schematics](SCH/VLFMON_receiver.png) 
+
+### Antenna
+
+![VLFMON antenna design](/DOC/SRC/img/antena.png) 
+
+
+
+## Additional possible uses
+
+  * Lightning detection
