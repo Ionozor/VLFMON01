@@ -1,0 +1,3 @@
+[submodule "DOC/VLFANT01"]
+	path = DOC/VLFANT01
+	url = git@github.com:mlab-modules/VLFANT01.git
