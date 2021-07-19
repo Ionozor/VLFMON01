@@ -12,6 +12,8 @@ Monitoring station optimized for (Sudden ionospheric disturbances) SID monitorin
 
 ### Antenna
 
+The loop magnetic antenna is based on use of [VLFANT01 MLAB module](https://github.com/mlab-modules/VLFANT01).
+
 ![VLFMON antenna design](/DOC/SRC/img/antena.png)
 
 
